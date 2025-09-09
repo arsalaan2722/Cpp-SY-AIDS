@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+class Sum {
+    int n, sum;
+public:
+ 
+    Sum(int x) {
+        n = x;
+        sum = n * (n + 1) / 2;  
+        cout << "Sum = " << sum << endl;
+    }
+};
+
+int main() {
+    int num;
+    cout << "Enter n: ";
+    cin >> num;
+
+    Sum obj(num);   
+    return 0;
+}
